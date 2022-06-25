@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>movies</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <!-- loading screen -->
+  <div class="loading-screen">
+    <div class="lds-hourglass"></div>
+  </div>
+
+  <!-- navbar -->
+  <nav class="m-0">
+    <div class="nav-header p-3 d-flex flex-column justify-content-between align-items-center">
+      <img src="img/logo.png" alt="logo" class="img-fluid">
+      <i class="fas fa-align-justify nav-btn"></i>  <!-- fa-times -->
+      <div class="share text-center">
+        <i class="fas fa-globe"></i>
+        <i class="fas fa-share-alt"></i>
+      </div>
+
+    </div>
+    <div class="nav-menu p-4 ms-1 d-flex flex-column">
+      <div class="nav-items">
+        <ul>
+          <li id="now_playing">
+            <a href="#">Now Playing</a>
+          </li>
+          <li id="popular">
+            <a href="#">Popular</a>
+          </li>
+          <li id="top_rated">
+            <a href="#" >Top Rated</a>
+          </li>
+          <li id="trending">
+            <a href="#" >Trending</a>
+          </li>
+          <li id="upcoming">
+            <a href="#">Upcoming</a>
+          </li>
+          <li>
+            <a href="#contact">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+      <div class="nav-icons mb-3">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fas fa-globe"></i></a>
+          <div class="pt-3">
+            <span class="text-white-50">Copyright Â© 2019 All Rights Reserved.</span>
+          </div>
+      </div>
+    </div>
+
+  </nav>
+
+  <!-- search -->
+  <section class="search pt-5 mt-3">
+    <div class="container d-md-flex">
+      <input type="text" class="form-control m-3 ms-0" placeholder="get movies by word.." oninput="getByWord(this.value)">
+      <input type="text" class="form-control m-3 ms-0" placeholder="search in the page.." oninput="searchInPage(this.value)">
+    </div>
+  </section>
+
+  <!-- movies -->
+  <main class="p-3 my-5">
+    <div class="container-fluid ">
+      <div class="row gy-4">
+      </div>
+    </div>
+  </main>
+  
+
+  <!-- contact -->
+  <section id="contact" class="py-5 mt-5">
+    <div class="container ">
+      <h3 class="text-white ">Contact Us</h3>
+      <div class="row">
+        <div class="col-md-6">
+          <input type="text" class="form-control m-3 ms-0" placeholder="Enter name">
+          <div class="valid text-center p-3">Your Name is not valid</div>
+        </div>
+        <div class="col-md-6">
+          <input type="text" class="form-control m-3 ms-0" placeholder="Enter email">
+          <div class="valid text-center p-3">Your email is not valid</div>
+        </div>
+        <div class="col-md-6">
+          <input type="text" class="form-control m-3 ms-0" placeholder="Enter Phone">
+          <div class="valid text-center p-3">Your phone is not valid</div>
+        </div>
+        <div class="col-md-6">
+          <input type="text" class="form-control m-3 ms-0" placeholder="Enter Age">
+          <div class="valid text-center p-3">Your age is not valid</div>
+        </div>
+        <div class="col-md-6">
+          <input type="password" class="form-control m-3 ms-0" placeholder="Enter Passwrod">
+          <div class="valid text-center p-3">Your password is not valid</div>
+        </div>
+        <div class="col-md-6">
+          <input type="password" class="form-control m-3 ms-0" placeholder="Re-Enter Passwrod">
+          <div class="valid text-center p-3">Your re password is not correct</div>
+        </div>
+      </div>
+      <div class="btn btn-outline-danger disabled mt-4" id='sumbit' >Sumbit</div>
+    </div>
+  </section>
+
+
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/jquery-3.6.0.min.js"></script>
+<script src="js/main.js"></script>
+</body>
