@@ -82,11 +82,14 @@ nav{
     z-index: 9;
     left: 0px;
     top: 0;
+    bottom:0;
     height: 100%;    
     overflow: hidden;
 }
 .nav-header{
     height: 100%;
+    top: 0;
+    bottom:0;
     background-color: white;
     position: fixed;
     width:60px;
@@ -104,6 +107,8 @@ nav{
 }
 .nav-menu{
     height: 100%;
+    top: 0;
+    bottom:0;
     width: var(--nav-control);
     justify-content: space-between !important;
     overflow: hidden;
